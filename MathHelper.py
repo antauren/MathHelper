@@ -12,7 +12,7 @@ def geometric_mean(list):
         multiplication *= int(i)
     return multiplication ** (1/len(list))
     
-def main(input):
+def start_program(input):
     if len(input) == 1:
         return welcome_messedge + help_messedge
         
@@ -47,5 +47,5 @@ help_messedge = '''Вызовите программу с одним из сле
 error_messedge = 'Вы ввели неправильные аргументы\n'
             
 inp = sys.argv
-print(main(inp))      
+print(start_program(inp))      
 #print(sys.argv[1:])
